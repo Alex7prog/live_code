@@ -1,0 +1,74 @@
+.navigation {
+  display: grid;
+
+  grid-template: auto auto / 1fr;
+  justify-items: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $md) {
+    grid-template: 51px / 1fr 1fr;
+    justify-items: start;
+  }
+
+  &__title {
+    font-family: 'Unica One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.875em;
+    color: #000;
+    margin: 0;
+  }
+
+  &__container {
+    display: grid;
+    width: 100%;
+    grid-template: auto / 1fr 150px 150px 1fr;
+    margin-top: 20px;
+
+    @media (min-width: $md) {
+      grid-template: 51px / 1fr 150px 150px;
+      justify-items: stretch;
+      margin: 0;
+    }
+  }
+
+  &__filter {
+    grid-column: 2 / 3;
+  }
+
+  &__sort {
+  }
+
+  &__label {
+    display: block;
+    text-align: center;
+
+    @media (min-width: $md) {
+      text-align: left;
+      padding-left: 9.67px;
+    }
+  }
+
+  &__select {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    font-weight: 700;
+    padding-top: 6.67px;
+    padding-bottom: 6.67px;
+    padding-left: 6.67px;
+    border: 1px solid #dedede;
+    margin-top: 13px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (min-width: $md) {
+      border: none;
+      margin: 0;
+    }
+  }
+}

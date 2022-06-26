@@ -1,0 +1,31 @@
+@import 'variables.scss';
+@import 'navigation.scss';
+@import 'products.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h5,
+h6 {
+  margin: 0;
+}
+
+.page {
+  min-width: 343px;
+  margin: auto;
+  padding: 30px 10px 40px;
+
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.375;
+  background-color: #f7f7f7;
+
+  @media (min-width: $md) {
+    max-width: 1180px;
+  }
+}
