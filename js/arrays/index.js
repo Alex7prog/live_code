@@ -8,9 +8,10 @@
 // c помощью метода pop достань последний элемент массива numbersList1 и помести его в переменную lastNumber
 // выведи в консоль эту переменную, а так же массив numbersList1 после выполнения pop
 
+// pop
 // input: -
 // output: - number, last array elem
-// pop
+
 const numbersList1 = [1, 2, 3, 4, 5];
 console.log('array BEFORE POP ', numbersList1);
 
@@ -58,7 +59,7 @@ console.log('after shift ', numbersList3);
 // выведи в консоль результат работы метода unshift, а так же массив numbersList4 после выполнения unshift
 
 // unshift
-// input: - number
+// input: - elem(number)
 // output: - new length of array
 
 const numbersList4 = [1, 2, 3, 4, 5];
@@ -89,7 +90,7 @@ callback(arr[i]) === false -> элемент НЕ будет добавлен в
 // input: callback
 // output: new filtered array
 
-// callback
+// callback()
 // input: elem of array
 // output: boolean
 
@@ -107,8 +108,9 @@ function filterCallback(element) {
 
 const newArr = anotherNumbersList.filter(elem => elem > 5);
 
-console.log('array ', anotherNumbersList);
+console.log('array before filter', anotherNumbersList);
 console.log('filtered array ', newArr);
+console.log('array after filter', anotherNumbersList);
 
 // c помощью метода filter создай новый массив evenPositions, в котором будут числа из четных позиций которые > 5
 // массива anotherNumbersList
