@@ -73,7 +73,7 @@ function multiplyArguments() {
 
 multiplyArguments(10, 7, 6);
 
-// good, ...rest
+// good practice, ...rest
 function multiply(...arg) {
   console.log(arg);
   return arg.reduce((acc, el) => acc * el);
