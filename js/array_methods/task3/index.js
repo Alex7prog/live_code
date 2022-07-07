@@ -21,13 +21,7 @@ const mapArrayElements = (arr, callback) => {
   const resArr = [];
 
   for (index = 0; index < arr.length; index += 1) {
-    // const el = arr[index];
-    // if (callback(el, index, arr)) {
-    //   resArr.push(el);
-    // }
-
     const el = callback(arr[index], index, arr);
-
     resArr.push(el);
   }
 
